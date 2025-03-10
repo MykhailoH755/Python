@@ -1,7 +1,26 @@
-for i in "Hello world":
-    if i == "l":
-        print("Done")
-        break
+numbers = [float(input("Enter the first number: ")), float(input("Enter the second number: "))]
+operator = input("Enter an operation (+, -, *, /): ")
+
+
+if operator == "+":
+    result = numbers[0] + numbers[1]
+
+elif operator == "-":
+    result = numbers[0] - numbers[1]
+
+elif operator == "*":
+    result = numbers[0] * numbers[1]
+
+elif operator == "/":
+    if numbers[1] != 0:
+        result = numbers[0] / numbers[1]
+
     else:
-        print("Not found")
+        result = "Error! Division by zero."
+
+else:
+    result = "Unknown operation."
+    
+
+print("Result:", result)
 
