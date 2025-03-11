@@ -1,4 +1,4 @@
-text = 'football, basketball, skate'
+text = 'i, love, russia,really,hard'
 hobbies = text.split(',')
 
 for i in range(0, len(hobbies)):
