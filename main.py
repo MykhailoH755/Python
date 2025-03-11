@@ -17,7 +17,6 @@ elif operator == "/":
 
     else:
         result = "Error! Division by zero."
-
 else:
     result = "Unknown operation."
     
